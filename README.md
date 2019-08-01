@@ -14,4 +14,5 @@ Type `docker-compose up` and run `localhost:9069` on your browser
 Type `docker-compose run web odoo scaffold module_name /mnt/addons-extra/`
 
 ## Notes
-You can put your addons enterprise in addons-enterprise/ and your custom addons in addons-extra/
+You can put your enterprise addons in addons-enterprise/ and your custom addons in addons-extra/
+Please refer to [https://docs.docker.com/] if you have problem with docker
