@@ -16,7 +16,7 @@ services:
     volumes:
       - ./addons-enterprise:/mnt/addons-enterprise
       - ./addons-extra:/mnt/addons-extra
-      - ./odoo-data:/var/lib/odoo
+      - ./odoo-data:/root
     ports:
       - "9069:8069"
       - "9071:8071"
