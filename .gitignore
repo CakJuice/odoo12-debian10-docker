@@ -126,3 +126,6 @@ dmypy.json
 # IDE
 .idea/
 .vscode/
+
+odoo-data/
+postgres-data/
