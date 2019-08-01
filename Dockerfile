@@ -9,6 +9,7 @@ RUN apt install -y wget python3 python3-dev python3-pip postgresql-client wkhtml
 
 RUN wget https://nightly.odoo.com/12.0/nightly/deb/odoo_12.0.latest_all.deb
 RUN apt install -y ./odoo_12.0.latest_all.deb
+RUN rm ./odoo_12.0.latest_all.deb
 
 COPY ./odoo.conf /etc/odoo/
 RUN chown odoo:odoo /etc/odoo/odoo.conf
