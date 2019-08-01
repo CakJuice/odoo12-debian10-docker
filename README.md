@@ -4,9 +4,6 @@ Using Debian 10 (Buster) & Wkhtmltopdf 0.12.5-*
 ## Prerequesities
 Install docker & docker-compose.
 
-## Notes
-You can put your enterprise addons in addons-enterprise/ and your custom addons in addons-extra/.
-
 ## Run Odoo.
 Type `docker-compose up` to run Odoo container, or `docker-compose up -d` to run with detach (background mode).
 
