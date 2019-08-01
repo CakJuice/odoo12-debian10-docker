@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:11
+    environment:
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_DB=postgres
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+
+  web:
+    build: .
+    command: odoo -c /etc/odoo/odoo.conf
+    volumes:
+      - ./addons-enterprise:/mnt/addons-enterprise
+      - ./addons-extra:/mnt/addons-extra
+      - ./odoo-data:/var/lib/odoo
+    ports:
+      - "9069:8069"
+      - "9071:8071"
+    depends_on:
+      - db
